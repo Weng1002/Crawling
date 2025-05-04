@@ -100,30 +100,66 @@ $ python 0850726.py push 0304 1231
    
 (1) 功能：
 
+- 找出在 {start_date} (含) 跟{end_date}  (含) 之間的以下資訊：
+  - 推爆的文章數量。
+  - 推爆文章中的所有圖片 URL，包括內文和留言中的圖片 URL。
+  - 圖片 URL定義：開頭必須是 http:// 或 https:// ，並且要以 .jpg 、.jpeg 、.png 、.gif 為副檔名結尾，副檔名不限大小寫。
+
+
 (2) 輸入格式：
 
 ```
-
+$ python {student_id}.py popular {start_date} {end_date}
 ```
 ```
-
+$ python 0850726.py popular 0304 1231
 ```
 
 (3) 輸出：
+
+```
+{
+    "number_of_popular_articles": 2,
+    "image_urls": [
+       "https://i.imgur.com/UDJQEyi.jpg",
+       "https://i.imgur.com/jUrvWQM.jpg",
+       "https://i.imgur.com/lU5JTIT.jpg",
+       "http://i.imgur.com/spn4dNg.jpg",
+       ...
+ ]
+}
+```   
 
 
 ### 4. Keyword
    
 (1) 功能：
 
+- 找出在 {start_date} (含) 和 {end_date} (含) 之間內文包含 {keyword} 的文章，並統計這些文章的以下資訊：
+     - 文章中的所有圖片 URL，包括內文和留言中的圖片 URL。
+     - 圖片 URL定義：開頭必須是http://  或 https:// ，並且要以 .jpg、.jpeg 、.png 、.gif 為副檔名結尾，副檔名不限大小寫。
+     - 內文範圍說明：.png 、.gif 為副檔名結尾，副檔名不限大小寫。
+     - 從「作者」(含)開始到綠色的「※ 發信站」(不含)之間，只要有出現這篇文章包含 {keyword} 。
+     - 如果「※ 發信站」不存在，則忽略這篇文章。內文標題和文章列表顯示的標題可能不同，以內文為準。內文出現的網址也在 keyword 匹配範圍內。
+
 (2) 輸入格式：
 
 ```
-
+$ python {student_id}.py keyword {start_date} {end_date} {keyword}
 ```
 ```
-
+$ python 0850726.py keyword 0304 1231 正妹
 ```
 
 (3) 輸出：
 
+```
+        {
+            "image_urls": [
+                "https://i.imgur.com/LNFIMk9.jpg",
+                "https://i.imgur.com/KpWP9Dm.jpg",
+                "http://i.imgur.com/A2LqXBB.jpg",
+                ...
+            ]
+ 
+```
