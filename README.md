@@ -33,5 +33,12 @@ $ python {student_id}.py crawl
 $ python　313707043.py crawl
 ```
 
+(3) 輸出：
+
+- articles.jsonl
+  - 包含所有文章。
+- popular_articles.jsonl
+  - 包含所有推爆的文章。
+
 
 
