@@ -5,4 +5,6 @@
 
 本次是生成式AI課程的第四次作業，是做爬蟲的練習，爬 PTT Beauty 板 2024 一整年的文章，2024 年的第一篇文章為 [正妹] aespa WINTER，然後再根據爬完的檔案進行三個操作。
 
+[連結](https://www.ptt.cc/bbs/Beauty/M.1704040318.A.E87.html) 
+
 ## Dataset & files
