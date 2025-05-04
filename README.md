@@ -56,7 +56,7 @@ $ python　313707043.py crawl
 $ python {student_id}.py push {start_date} {end_dat
 ```
 ```
-$ python 0850726.py push 0304 1231
+$ python 313707043.py push 0304 1231
 ```
 
 (3) 輸出：
@@ -112,7 +112,7 @@ $ python 0850726.py push 0304 1231
 $ python {student_id}.py popular {start_date} {end_date}
 ```
 ```
-$ python 0850726.py popular 0304 1231
+$ python 313707043.py popular 0304 1231
 ```
 
 (3) 輸出：
@@ -148,7 +148,7 @@ $ python 0850726.py popular 0304 1231
 $ python {student_id}.py keyword {start_date} {end_date} {keyword}
 ```
 ```
-$ python 0850726.py keyword 0304 1231 正妹
+$ python 313707043.py keyword 0304 1231 正妹
 ```
 
 (3) 輸出：
